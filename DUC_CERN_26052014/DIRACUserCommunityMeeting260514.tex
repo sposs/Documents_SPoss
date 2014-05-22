@@ -214,13 +214,24 @@ Spectroscopy:
 
 \section{User Interface}
 \begin{frame}
-\frametitle{User Interface}
+\frametitle{User Interface (1)}
 Based on ILCDIRAC:
 \begin{itemize}
 \setlength{\itemindent}{-1.2em}
 \item Uses DIRAC's \emph{Workflow}
 \item Decoupling of Applications and Jobs
+\end{itemize}
+\centering
+\includegraphics[width=8cm]{UI_UML}
+\end{frame}
+\begin{frame}
+\frametitle{User Interface (2)}
+\begin{itemize}
+\setlength{\itemindent}{-1.2em}
 \item Uses \alert{Template Method} pattern
+\begin{itemize}
+\item define algorithms in super class, let subclasses overwrite the steps
+\end{itemize}
 \item Took an afternoon to get the UI working
 \item Adding a new application is fast
 \end{itemize}
