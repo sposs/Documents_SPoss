@@ -71,7 +71,7 @@ Fire loving (pyrophilous) insects depend on forest fires for their reproduction.
 \begin{columns}
 \column{0.49\textwidth}
 \includegraphics[width=\textwidth]{kaefer_03.jpg}
-\column{0.49\textwidth}
+\column{0.51\textwidth}
 \begin{quote}
 [...] these insects have special sensors for smoke and infrared radiation.
 \end{quote}
@@ -81,10 +81,10 @@ Fire loving (pyrophilous) insects depend on forest fires for their reproduction.
 \begin{frame}
 \frametitle{How/why}
 \begin{itemize}
-\item Often stay on the stem of trees close to burning or glowing wood or hot ashes
-\item They try to copulate vigorously
-\item Females deposit the eggs under the bark of burnt trees
-\item The larvae can \emph{only} develop in the wood of burnt trees
+\item \emph{Often stay on the stem of trees close to burning or glowing wood or hot ashes}
+\item They \emph{try to copulate vigorously}
+\item Females \emph{deposit the eggs under the bark of burnt trees}
+\item The larvae can \emph{only develop in the wood of burnt trees}
 \end{itemize}
 Fire detection is obviously an important requirement for the survival of the pyrophilous insects
 \end{frame}
@@ -133,15 +133,54 @@ Most probably, IR radiation absorbed by the proteins, the chitin fibres, and the
 \end{frame}
 
 \section{Golay cell}
+
+\begin{frame}
+\frametitle{Pneumatic detector model}
+Marcel J.~E.~Golay, review of Scientific Instruments 18, 347(\alert{1947})
+\begin{itemize}
+\item model pneumatic circuits like electric ones
+\begin{itemize}
+\item Electronics is recent
+\item Physics knowledge is evolving rapidly
+\item Need to find new detection tools
+\end{itemize}
+\item most of it is forgotten now
+\begin{itemize}
+\item who has heard of pneumatic capacitance?
+\end{itemize}
+\item most important part: Golay Cell development
+\end{itemize}
+Start principle: energy measurement is about observing the geometrical displacement of something
+\end{frame}
+
+\begin{frame}
+\frametitle{Considerations, concepts}
+\begin{itemize}
+%\item thermal capacity: $\frac{C}{T}$
+%\item thermal resistance: 1/rate at which a differential heat flow between the background and the black body will take place, due to sudden change of temperature
+\item \alert{no substance is known to act simultaneously as a black body and as sensitive thermometer having a small calorific inertia}
+\item Chose either:
+\begin{itemize}
+\item electrical translating: thermopile, bolometer
+\item heat received passes in a gas of a cell closed by an optical deflecting membrane: opto-acoustical detectors
+\end{itemize}
+
+\end{itemize}
+
+\end{frame}
+\begin{frame}
+\frametitle{Considerations, concepts}
+\begin{itemize}
+\item heat conductivity of the gas: heat leakance = noise
+\item pneumatic ohm: pneumatic resitance across which a pressure of 1 bar is developed by a gaseous flow of one $\mathrm{cm}^3\mathrm{s}^{-1}$.
+\item pneumatic farad: incremental pressure of one bar causes the admission of $1 \mathrm{cm}^3$ of gas 
+\end{itemize}
+\end{frame}
 \begin{frame}
 \frametitle{A look into the Golay Cell}
 \includegraphics[width=9cm]{2000px-Golay_Cell_Schematic.png}
 \end{frame}
 
-\begin{frame}
-\frametitle{Pneumatic detector model}
-
-\end{frame}
 
 \section{Back to insects}
 \begin{frame}
@@ -173,7 +212,38 @@ From the Center of advanced european studies and research:\\
 \section{Other detector for FIR}
 \begin{frame}
 \frametitle{Comparing Golay cells and pyroelectric detectors}
+Pyroelectric detectors: ferroelectric crystal (e.g. LiTaO3), instantaneous polarization is a funtion of the rate of temperature change in crystal
 
+\end{frame}
+
+\begin{frame}
+\frametitle{Comparing}
+From Spectrum Detector Inc.:\\
+
+\begin{columns}
+\column{0.6\textwidth}
+Golay Cell
+\begin{itemize}
+\item very sensitive (sub nW)
+\item broad spectral response
+\item well characterized
+\item low power only (10$\mu W$ max)
+\item very fragile
+\item expensive (\$10K-\$15K)
+\end{itemize}
+\column{0.6\textwidth}
+Pyroelectric
+\begin{itemize}
+\item sensitive (nW)
+\item broad spectral response
+\item fast
+\item up to 10mW
+\item cheap (\$450 to \$2000)
+\item lower efficiency
+\item not well charaterized
+\item microphonic response requires care
+\end{itemize}
+\end{columns}
 \end{frame}
 
 \section{Conclusion}
@@ -182,6 +252,24 @@ From the Center of advanced european studies and research:\\
 
 \end{frame}
 
+\appendix
+
+\begin{frame}
+\frametitle{Other natural IR detectors}
+\begin{columns}
+\column{0.6\textwidth}
+\begin{itemize}
+\item Pit viper 
+\item Red-bodied Swallowtails (butterfly)
+\item "kissing bug" or "barber bug" (no pic, disgusting)
+\item vampire bat
+\item common carp?
+\item other fish?
+\end{itemize}
+\column{0.45\textwidth}
+\includegraphics[width=\textwidth]{2005-common-rose.jpg}
+\end{columns}
+\end{frame}
 
 %{
 %\usebackgroundtemplate{\includegraphics[width=\paperwidth]{cyborg.jpg}}
