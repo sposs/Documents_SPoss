@@ -58,8 +58,8 @@
 \item Helmut Schmitz*
 \end{enumerate}
 Institute of zoology, University of Bonn,\\
-Forschungszentrum Julich GmbH, Zentralabteilung Technologie,\\
-Forschungszentrum Julich GmbH, Perter Grunberg Institut
+Forschungszentrum J\"ulich GmbH, Zentralabteilung Technologie,\\
+Forschungszentrum J\"ulich GmbH, Peter Gr\"unberg Institut
 \end{frame}
 
 \section{A bit of biology}
@@ -71,11 +71,12 @@ Fire loving (pyrophilous) insects depend on forest fires for their reproduction.
 \begin{columns}
 \column{0.49\textwidth}
 \includegraphics[width=\textwidth]{kaefer_03.jpg}
-\column{0.51\textwidth}
+\column{0.6\textwidth}
 \begin{quote}
 [...] these insects have special sensors for smoke and infrared radiation.
 \end{quote}
 \end{columns}
+Distribution: more or less everywhere
 \end{frame}
 
 \begin{frame}
@@ -139,11 +140,10 @@ Most probably, IR radiation absorbed by the proteins, the chitin fibres, and the
 Marcel J.~E.~Golay, review of Scientific Instruments 18, 347(\alert{1947})
 \begin{itemize}
 \item model pneumatic circuits like electric ones
-\begin{itemize}
-\item Electronics is recent
-\item Physics knowledge is evolving rapidly
-\item Need to find new detection tools
-\end{itemize}
+%\begin{itemize}
+%\item Physics knowledge is evolving rapidly
+%\item Need to find new detection tools
+%\end{itemize}
 \item most of it is forgotten now
 \begin{itemize}
 \item who has heard of pneumatic capacitance?
@@ -190,11 +190,36 @@ Start principle: energy measurement is about observing the geometrical displacem
 
 \begin{frame}
 \frametitle{A bit of math}
+\begin{eqnarray}
+\Delta P &=& \frac{\beta \Delta T_{mean}}{1+\Omega}\\
+\Delta T_{mean} &=& \frac{\int_0^{H_c} \Delta T(z) dz}{H_c}\\
+\Omega &=& \frac{R^4(1-v^2)}{16\cdot E \cdot t_p^3 \cdot H_c \cdot\kappa}\\
+\kappa &=& -(1/V)(\delta V/\delta P)_T\\
+y_{max} &=& \frac{3\beta\kappa \Omega \Delta T_{mean} H_c}{1+\Omega}
+\end{eqnarray}
+$\kappa$ is medium compressibility: for water $=4.5\times 10^{-10} \mathrm{Pa}^{-1}$
+
+
 \end{frame}
 
 \begin{frame}
-\frametitle{What is the best medium?}
-
+\frametitle{Comparing media}
+\begin{columns}
+\column{0.6\textwidth}
+\includegraphics[width=\textwidth]{IRPowerDensity.png}\\
+\includegraphics[width=\textwidth]{TemperatureDist.png}
+\column{0.6\textwidth}
+$10\mathrm{mW}/\mathrm{m}^2, \mathrm{after}~0.5s$:
+\includegraphics[width=\textwidth]{maxdeflexion.png}\\
+Max deflection for \\water: 0.2nm, gas: 12nm\\
+\end{columns}
+\end{frame}
+\begin{frame}
+\frametitle{Readout}
+\begin{quote}
+The calculated deformation [...] for water as liquid and the deformation of the [...] dendrite [...] have same magnitude. [...] deformations of the tip of the dendrite of only 0.1nm [...] yield a receptor potential. 
+\end{quote}
+Proposed readout: interferometry, tunneling contacts or capacitive position sensor with nm resolution.
 \end{frame}
 
 \section{A working prototype}
@@ -249,7 +274,14 @@ Pyroelectric
 \section{Conclusion}
 \begin{frame}
 \frametitle{Conclusion}
-
+\begin{itemize}
+\item Insects possess very sensitive mechanoreceptor
+\item Difficult to achieve for a technical sensor
+\item Need a very precise readout system, 1nm resolution
+\item prototype sensor was developed at CAESAR
+\item Need to optimise the liquide in the cavity, but very hard to build
+\end{itemize}
+Nature still has a lot to teach us about sensors!
 \end{frame}
 
 \appendix
