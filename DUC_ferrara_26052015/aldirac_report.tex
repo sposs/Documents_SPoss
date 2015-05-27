@@ -45,6 +45,11 @@
 \tableofcontents
 \end{frame}
 
+\begin{frame}
+\frametitle{Legal mention: NOTEDEV}
+This project has received funding from the European Union's Seventh Framework Programme for research, technological development and demonstration under grant agreement no 607521.
+\end{frame}
+
 \section{ALDIRAC}
 \begin{frame}
 \frametitle{ALDIRAC status}
@@ -63,8 +68,8 @@ Adds dedicated system to manage Alpes~Lasers data (SimuDB)
 \frametitle{Run framework}
 Use AWS:
 \begin{itemize}
-\item image created once, stored on AWS
-\item ALDIRAC update performed at boot time using dedicated tool
+\item Image created once, stored on AWS
+\item ALDIRAC update performed at boot time using dedicated script
 \end{itemize}
 Software management:
 \begin{itemize}
@@ -96,54 +101,104 @@ Software management:
 
 \section{Comments}
 \begin{frame}
-\frametitle{Things that can hurt}
+\centering
+And now some personal/shared comments
+\end{frame}
+
+\begin{frame}
+\centering
+\includegraphics[width=0.8\textwidth]{inquisition.png}
+\end{frame}
+
+\begin{frame}
+\frametitle{The good}
+\begin{columns}
+\column{0.55\textwidth}
+\begin{itemize}
+\item Active development
+\item Lots of users
+\item Code review (Yeah!)
+\end{itemize}
+\column{0.49\textwidth}
+\includegraphics[width=\textwidth]{good.jpeg}
+\end{columns}
+\end{frame}
+
+\begin{frame}
+\frametitle{The bad, the ugly}
 \begin{itemize}
 \item Project leadership
-\item project planning
-\item project stability
+\item Project planning
+\item Project stability
 \item Project usability
 \end{itemize}
 \end{frame}
 
 \begin{frame}
 \frametitle{Project leadership}
+\begin{columns}
+\column{0.55\textwidth}
 \begin{itemize}
 \item Who is responsible?
 \item Who is the contact person?
 \item Who is responsible for what?
 \end{itemize}
+\column{0.49\textwidth}
+\includegraphics[width=\textwidth]{bad.jpeg}
+\end{columns}
 \end{frame}
 
 \begin{frame}
 \frametitle{Project planning}
 \begin{itemize}
-\item Where are written the development plans?
-\item Where are the specs for the required changes?
+\item Where are written the development plans? (Discussed already, thanks Malachi)
+\item Where are the specs for the required changes? (Discussed already, thanks Jan)
 \item Can we stick to plans?
 \end{itemize}
 \end{frame}
 
 \begin{frame}
 \frametitle{Project stability}
-Ensure 1-year stability:
+\begin{columns}
+\column{0.55\textwidth}
+Ensure n-year stability (LTS):
 \begin{itemize}
 \item Need utilities to migrate
 \item Need ``guarantee'' that systems work
 \item Public reports for run quality (CI reports)
 \end{itemize}
+\column{0.49\textwidth}
+\includegraphics[width=\textwidth]{ugly.jpeg}
+\end{columns}
+~\\
+This version \alert{MUST only} receive real patches.
 \end{frame}
 
 \begin{frame}
 \frametitle{Project usability}
 Required:
 \begin{itemize}
-\item Better deploy/install tools: can we use setup.py?
+\item Better deploy/install tools: can we use setup.py/pip?
 \item pyOpenSSL?
 \item 'Standard' tools e.g. SimpleXMLRPCServer allows keyword args, function doc lookup (self documented client)
 \item Exceptions
 \item PEP8
+\item Flot
 \end{itemize}
 Web platform: why not django?
+\end{frame}
+
+\begin{frame}
+
+\centering
+\includegraphics[width=\textwidth]{wheel.png}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Final message}
+\centering
+Currently DIRAC is not industry ready.
 \end{frame}
 
 \section{Prospects}
@@ -155,4 +210,12 @@ Submitted DIRAC abstract to
 \includegraphics[width=\textwidth]{europython-2015-logo-white-bg.png}
 \end{frame}
 
+\begin{frame}
+\frametitle{Future}
+\begin{itemize}
+\item Last DIRAC User Community meeting
+\item Unsure after Dec 8th
+\item ALDIRAC future?
+\end{itemize} 
+\end{frame}
 \end{document}
